@@ -15,8 +15,17 @@ $quote = json_decode(file_get_contents($api_url));
 </head>
 
 <body>
-    <div class="quote"><?php echo $quote->content; ?></div>
-    <div class="author"> By-<?php echo $quote->author; ?></div>
+    <div class="quote">
+        <?php 
+        echo $quote->content; 
+        ?>
+    </div>
+    <div class="author">
+         By-
+         <?php 
+         echo $quote->author; 
+         ?>
+         </div>
     <form method="post">
         <button type="submit" class="button">New Quote</button>
     </form>
